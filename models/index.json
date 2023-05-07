@@ -1,0 +1,12 @@
+[
+    {
+        "url": "https://www.kaggle.com/datasets/kaggle/us-baby-names",
+        "fixture": "fixtures/us_first_names_female.csv",
+        "model": "us_first_name_female"
+    },
+    {
+        "url": "https://www.kaggle.com/datasets/kaggle/us-baby-names",
+        "fixture": "fixtures/us_first_names_male.csv",
+        "model": "us_first_name_male"
+    }
+]

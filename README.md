@@ -1,5 +1,5 @@
-# npm-boilerplate
-Boilerplate for creating npm packages.
+# fatum
+Random data generator.
 
 [![Version][badge-vers]][npm]
 [![Bundle size][npm-size-badge]][npm-size-url]
@@ -20,9 +20,17 @@ Boilerplate for creating npm packages.
 [![License][badge-lic]][github]
 [![Made in Ukraine][ukr-badge]][ukr-link]
 
+## 🇺🇦 Help Ukraine
+I woke up on my 26th birthday at 5 am from the blows of russian missiles. They attacked the city of Kyiv, where I live, as well as the cities in which my family and friends live. Now my country is a war zone. 
+
+We fight for democratic values, freedom, for our future! Once again Ukrainians have to stand against evil, terror, against genocide. The outcome of this war will determine what path human history is taking from now on.
+
+💛💙  Help Ukraine! We need your support! There are [dozen ways][ukr-link] to help us, just do it!
+
 
 ## Table of Contents
-- [npm-boilerplate](#npm-boilerplate)
+- [fatum](#fatum)
+  - [🇺🇦 Help Ukraine](#-help-ukraine)
   - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
   - [Installation](#installation)
@@ -44,12 +52,15 @@ Package is [continuously tested][node-ver-test-url] on darwin, linux and win32 p
 To install the library run the following command
 
 ```bash
-  npm i --save npm-boilerplate
+  npm i --save fatum
 ```
 
 ## Usage
 
 ```javascript
+import fatum from 'fatum';
+
+console.log(fatum.firstName());
 
 ```
 
@@ -57,44 +68,44 @@ To install the library run the following command
 
 Make the changes to the code and tests. Then commit to your branch. Be sure to follow the commit message conventions. Read [Contributing Guidelines](.github/CONTRIBUTING.md) for details.
 
-[npm]: https://www.npmjs.com/package/npm-boilerplate
-[github]: https://github.com/pustovitDmytro/npm-boilerplate
-[coveralls]: https://coveralls.io/github/pustovitDmytro/npm-boilerplate?branch=master
-[badge-deps]: https://img.shields.io/librariesio/release/npm/npm-boilerplate.svg
-[badge-vers]: https://img.shields.io/npm/v/npm-boilerplate.svg
-[badge-lic]: https://img.shields.io/github/license/pustovitDmytro/npm-boilerplate.svg
-[badge-coverage]: https://coveralls.io/repos/github/pustovitDmytro/npm-boilerplate/badge.svg?branch=master
-[url-coverage]: https://coveralls.io/github/pustovitDmytro/npm-boilerplate?branch=master
+[npm]: https://www.npmjs.com/package/fatum
+[github]: https://github.com/pustovitDmytro/fatum
+[coveralls]: https://coveralls.io/github/pustovitDmytro/fatum?branch=master
+[badge-deps]: https://img.shields.io/librariesio/release/npm/fatum.svg
+[badge-vers]: https://img.shields.io/npm/v/fatum.svg
+[badge-lic]: https://img.shields.io/github/license/pustovitDmytro/fatum.svg
+[badge-coverage]: https://coveralls.io/repos/github/pustovitDmytro/fatum/badge.svg?branch=master
+[url-coverage]: https://coveralls.io/github/pustovitDmytro/fatum?branch=master
 
-[snyk-badge]: https://snyk-widget.herokuapp.com/badge/npm/npm-boilerplate/badge.svg
-[snyk-url]: https://snyk.io/advisor/npm-package/npm-boilerplate
+[snyk-badge]: https://snyk-widget.herokuapp.com/badge/npm/fatum/badge.svg
+[snyk-url]: https://snyk.io/advisor/npm-package/fatum
 
-[tests-badge]: https://img.shields.io/circleci/build/github/pustovitDmytro/npm-boilerplate
-[tests-url]: https://app.circleci.com/pipelines/github/pustovitDmytro/npm-boilerplate
+[tests-badge]: https://img.shields.io/circleci/build/github/pustovitDmytro/fatum
+[tests-url]: https://app.circleci.com/pipelines/github/pustovitDmytro/fatum
 
-[codefactor-badge]: https://www.codefactor.io/repository/github/pustovitdmytro/npm-boilerplate/badge
-[codefactor-url]: https://www.codefactor.io/repository/github/pustovitdmytro/npm-boilerplate
+[codefactor-badge]: https://www.codefactor.io/repository/github/pustovitdmytro/fatum/badge
+[codefactor-url]: https://www.codefactor.io/repository/github/pustovitdmytro/fatum
 
-[commit-activity-badge]: https://img.shields.io/github/commit-activity/m/pustovitDmytro/npm-boilerplate
+[commit-activity-badge]: https://img.shields.io/github/commit-activity/m/pustovitDmytro/fatum
 
-[scrutinizer-badge]: https://scrutinizer-ci.com/g/pustovitDmytro/npm-boilerplate/badges/quality-score.png?b=master
-[scrutinizer-url]: https://scrutinizer-ci.com/g/pustovitDmytro/npm-boilerplate/?branch=master
+[scrutinizer-badge]: https://scrutinizer-ci.com/g/pustovitDmytro/fatum/badges/quality-score.png?b=master
+[scrutinizer-url]: https://scrutinizer-ci.com/g/pustovitDmytro/fatum/?branch=master
 
 [codacy-badge]: https://app.codacy.com/project/badge/Grade/8667aa23afaa4725854f098c4b5e8890
-[codacy-url]: https://www.codacy.com/gh/pustovitDmytro/npm-boilerplate/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pustovitDmytro/npm-boilerplate&amp;utm_campaign=Badge_Grade
+[codacy-url]: https://www.codacy.com/gh/pustovitDmytro/fatum/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pustovitDmytro/fatum&amp;utm_campaign=Badge_Grade
 
-[sonarcloud-badge]: https://sonarcloud.io/api/project_badges/measure?project=pustovitDmytro_npm-boilerplate&metric=alert_status
-[sonarcloud-url]: https://sonarcloud.io/dashboard?id=pustovitDmytro_npm-boilerplate
+[sonarcloud-badge]: https://sonarcloud.io/api/project_badges/measure?project=pustovitDmytro_fatum&metric=alert_status
+[sonarcloud-url]: https://sonarcloud.io/dashboard?id=pustovitDmytro_fatum
 
-[npm-downloads-badge]: https://img.shields.io/npm/dw/npm-boilerplate
-[npm-size-badge]: https://img.shields.io/bundlephobia/min/npm-boilerplate
-[npm-size-url]: https://bundlephobia.com/result?p=npm-boilerplate
+[npm-downloads-badge]: https://img.shields.io/npm/dw/fatum
+[npm-size-badge]: https://img.shields.io/bundlephobia/min/fatum
+[npm-size-url]: https://bundlephobia.com/result?p=fatum
 
-[node-ver-test-badge]: https://github.com/pustovitDmytro/npm-boilerplate/actions/workflows/npt.yml/badge.svg?branch=master
-[node-ver-test-url]: https://github.com/pustovitDmytro/npm-boilerplate/actions?query=workflow%3A%22Node.js+versions%22
+[node-ver-test-badge]: https://github.com/pustovitDmytro/fatum/actions/workflows/npt.yml/badge.svg?branch=master
+[node-ver-test-url]: https://github.com/pustovitDmytro/fatum/actions?query=workflow%3A%22Node.js+versions%22
 
-[fossa-badge]: https://app.fossa.com/api/projects/custom%2B24828%2Fnpm-boilerplate.svg?type=shield
-[fossa-url]: https://app.fossa.com/projects/custom%2B24828%2Fnpm-boilerplate?ref=badge_shield
+[fossa-badge]: https://app.fossa.com/api/projects/custom%2B24828%2Ffatum.svg?type=shield
+[fossa-url]: https://app.fossa.com/projects/custom%2B24828%2Ffatum?ref=badge_shield
 
 [ukr-badge]: https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7
 [ukr-link]: https://war.ukraine.ua
