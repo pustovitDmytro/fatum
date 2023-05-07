@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/pustovitDmytro/fatum/compare/v1.0.0...v1.0.1) (2023-05-07)
+
+
+### Fix
+
+* fixes some security vulnerabilities ([5491ad9](https://github.com/pustovitDmytro/fatum/commit/5491ad997f6db4cc4b7d0cfea93fc3bddf24173f))
+
 # 1.0.0 (2023-05-07)
 
 
