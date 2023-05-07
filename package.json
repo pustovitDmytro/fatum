@@ -51,7 +51,7 @@
     "chance": "^1.1.9",
     "conventional-changelog-eslint": "^3.0.9",
     "coveralls": "^3.1.1",
-    "danger": "^11.2.0",
+    "danger": "^11.2.6",
     "docopt": "^0.6.2",
     "eslint": "^8.30.0",
     "eslint-config-incredible": "^2.4.2",
