@@ -11,12 +11,16 @@ import Test from '../Test';
 
 const factory = new Test();
 
-const { merge, default:main } = load('../bin/fixtures.js');
+const loaded = {};
 
-suite('fixtures: merge');
+suite('fixtures: merge #no-pack');
 
 before(async function () {
     await factory.setTmpFolder();
+    const { merge, default:main } = load('../bin/fixtures.js');
+
+    loaded.merge = merge;
+    loaded.main = main;
 });
 
 function stringToStream(string) {
@@ -54,7 +58,7 @@ test('merge', async function () {
         output
     });
 
-    const stat = await merge(rl);
+    const stat = await loaded.merge(rl);
 
     output.end();
     assert.deepEqual(stat, { total: 4, merged: 3 });
@@ -75,7 +79,7 @@ for (const model of models) {
         const fixture = path.join(__dirname, '../../', model.fixture);
         const outPath = path.join(tmpFolder, `${v4()}.csv`);
 
-        await main({
+        await loaded.main({
             merge   : true,
             '--in'  : fixture,
             '--out' : outPath
