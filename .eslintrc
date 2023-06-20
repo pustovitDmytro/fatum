@@ -3,6 +3,7 @@
         "incredible"
     ],
     "rules":{
-        "unicorn/prefer-top-level-await": 0
+        "unicorn/prefer-top-level-await": 0,
+        "unicorn/expiring-todo-comments": 0
     }
 }
