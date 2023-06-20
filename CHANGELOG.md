@@ -1,3 +1,14 @@
+# [1.1.0](https://github.com/pustovitDmytro/fatum/compare/v1.0.1...v1.1.0) (2023-06-20)
+
+
+### Fix
+
+* fixes tests ([141bef2](https://github.com/pustovitDmytro/fatum/commit/141bef2be92f8fdbbb67620e5f922e04c6670069))
+
+### New
+
+* adds new methods ([0758956](https://github.com/pustovitDmytro/fatum/commit/075895637f5d545e9bb0ffa481ce01ef5ac0419c))
+
 ## [1.0.1](https://github.com/pustovitDmytro/fatum/compare/v1.0.0...v1.0.1) (2023-05-07)
 
 
