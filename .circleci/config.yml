@@ -156,6 +156,9 @@ jobs:
             - restore_cache:
                 <<: *cache-defaults
             - run:
+                name: Build documentation
+                command: npm run documentate
+            - run:
                 name: Create Release
                 command: if [ -z ${CIRCLE_SKIP_DEPLOY+x} ]; then npm run semantic-release;else echo 'job skipped';fi
 

@@ -1,3 +1,8 @@
 import Fatum from './Fatum';
+import * as generators from './generators';
 
-export default new Fatum();
+const fatum = new Fatum();
+
+fatum.addGenerators(generators);
+
+export default fatum;

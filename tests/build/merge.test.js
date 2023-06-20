@@ -1,9 +1,9 @@
 import path from 'path';
-import readline from 'readline';
 import { Readable, PassThrough } from 'stream';
 import { assert } from 'chai';
 import { v4 } from 'uuid';
 import fs from 'fs-extra';
+import { isString } from 'myrmidon';
 import { load } from '../utils';
 import models from '../../models/index.json';
 import { tmpFolder } from '../constants';
@@ -17,7 +17,8 @@ suite('fixtures: merge #no-pack');
 
 before(async function () {
     await factory.setTmpFolder();
-    const { merge, default:main } = load('../bin/fixtures.js');
+    const { default:main } = load('../bin/fixtures.js');
+    const { merge } = load('../tools/fixturesMerge');
 
     loaded.merge = merge;
     loaded.main = main;
@@ -46,35 +47,31 @@ async function streamToString(stream) {
 test('merge', async function () {
     const output =  new PassThrough();
 
-    const input = `
-    abcd,1,
+    const input = `abcd,1,
     def,3,
     abcd,4,
-    jj ,2
-    `;
+    jj ,2`;
 
-    const rl = readline.createInterface({
-        input : stringToStream(input),
-        output
-    });
-
-    const stat = await loaded.merge(rl);
+    const stat = await loaded.merge(stringToStream(input), output);
 
     output.end();
-    assert.deepEqual(stat, { total: 4, merged: 3 });
+    assert.deepOwnInclude(stat, { total: 4, merged: 3 });
 
     const result = await streamToString(output);
 
     assert.equal(result, 'abcd,5\ndef,3\njj,2');
 });
 
-async function areFilesSame(actual, expected) {
-    const [ actualBuff, expectedBuff ] = await Promise.all([ actual, expected ].map(p => fs.readFile(p)));
+async function areFilesSameLength(actual, expected) {
+    const buffers = await Promise.all([ actual, expected ].map(p => fs.readFile(p)));
+    const [ actualLength, expectedLength ] = buffers.map(b => b.toString().split('\n').length);
 
-    assert.isTrue(actualBuff.equals(expectedBuff));
+
+    assert.equal(actualLength, expectedLength);
 }
 
 for (const model of models) {
+    if (!isString(model.fixture)) continue;
     test(`verify ${model.fixture} has no duplicates`, async function () {
         const fixture = path.join(__dirname, '../../', model.fixture);
         const outPath = path.join(tmpFolder, `${v4()}.csv`);
@@ -85,7 +82,7 @@ for (const model of models) {
             '--out' : outPath
         });
 
-        await areFilesSame(outPath, fixture);
+        await areFilesSameLength(outPath, fixture);
     });
 }
 

@@ -1,0 +1,8 @@
+site_name: Cottus
+docs_dir: docs
+nav:
+  - 'Home': 'index.md'
+  - 'Generators': 'generators.md'
+markdown_extensions:
+  - toc:
+      permalink: True

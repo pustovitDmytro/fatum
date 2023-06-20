@@ -1,0 +1,269 @@
+[
+    {
+        "id": "_DOT",
+        "fixture": ".",
+        "noPrevSpace": true
+    },
+    {
+        "id": "_DQ",
+        "fixture": ":",
+        "noPrevSpace": true
+    },
+    {
+        "id": "_$",
+        "fixture": "$"
+    },
+    {
+        "id": "_SQ",
+        "fixture": ";",
+        "noPrevSpace": true
+    },
+    {
+        "id": "NNS",
+        "fixture": "NNS"
+    },
+    {
+        "id": "IN",
+        "fixture": "IN"
+    },
+    {
+        "id": "VBP",
+        "fixture": "VBP"
+    },
+    {
+        "id": "VBN",
+        "fixture": "VBN"
+    },
+    {
+        "id": "TO",
+        "fixture": "TO"
+    },
+    {
+        "id": "VB",
+        "fixture": "VB"
+    },
+    {
+        "id": "DT",
+        "fixture": "DT"
+    },
+    {
+        "id": "NN",
+        "fixture": "NN"
+    },
+    {
+        "id": "CC",
+        "fixture": "CC"
+    },
+    {
+        "id": "VBD",
+        "fixture": "VBD"
+    },
+    {
+        "id": "WP",
+        "fixture": "WP"
+    },
+    {
+        "id": "JJ",
+        "fixture": "JJ"
+    },
+    {
+        "id": "CD",
+        "fixture": "CD"
+    },
+    {
+        "id": "PRP",
+        "fixture": "PRP"
+    },
+    {
+        "id": "VBZ",
+        "fixture": "VBZ"
+    },
+    {
+        "id": "POS",
+        "fixture": "POS"
+    },
+    {
+        "id": "VBG",
+        "fixture": "VBG"
+    },
+    {
+        "id": "RB",
+        "fixture": "RB"
+    },
+    {
+        "id": "WRB",
+        "fixture": "WRB"
+    },
+    {
+        "id": "PRP$",
+        "fixture": "PRP$"
+    },
+    {
+        "id": "MD",
+        "fixture": "MD"
+    },
+    {
+        "id": "WDT",
+        "fixture": "WDT"
+    },
+    {
+        "id": "JJR",
+        "fixture": "JJR"
+    },
+    {
+        "id": "JJS",
+        "fixture": "JJS"
+    },
+    {
+        "id": "WP$",
+        "fixture": "WP$"
+    },
+    {
+        "id": "RP",
+        "fixture": "RP"
+    },
+    {
+        "id": "PDT",
+        "fixture": "PDT"
+    },
+    {
+        "id": "EX",
+        "fixture": "EX"
+    },
+    {
+        "id": "RBS",
+        "fixture": "RBS"
+    },
+    {
+        "id": "NNPS",
+        "fixture": "NNPS"
+    },
+    {
+        "id": "NNP",
+        "fixture": "NNP"
+    },
+    {
+        "id": "RBR",
+        "fixture": "RBR"
+    },
+    {
+        "id": "FW",
+        "fixture": "FW"
+    },
+    {
+        "id": "UH",
+        "fixture": "UH"
+    },
+    {
+        "id": "B-geo",
+        "fixture": "B-geo",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "I-geo",
+        "fixture": "I-geo",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "B-gpe",
+        "fixture": "B-gpe",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "I-gpe",
+        "fixture": "I-gpe",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "B-per",
+        "fixture": "B-per",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "I-per",
+        "fixture": "I-per",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "B-org",
+        "fixture": "B-org",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "I-org",
+        "fixture": "I-org",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "B-art",
+        "fixture": "B-art",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "I-art",
+        "fixture": "I-art",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "B-tim",
+        "fixture": "B-tim",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "I-tim",
+        "fixture": "I-tim",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "B-nat",
+        "fixture": "B-nat",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "I-nat",
+        "fixture": "I-nat",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "B-eve",
+        "fixture": "B-eve",
+        "modifiers": [
+            "capitalize"
+        ]
+    },
+    {
+        "id": "I-eve",
+        "fixture": "I-eve",
+        "modifiers": [
+            "capitalize"
+        ]
+    }
+]

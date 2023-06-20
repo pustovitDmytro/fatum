@@ -1,0 +1,10 @@
+import fatum from '{{info.name}}';
+
+{{#examples}}
+    {{#is this.type 'generator-example'}}
+fatum.{{this.method}}({{#if this.input}}{{this.input}}{{/if}});
+/* Sample results:
+ {{this.output}}
+*/
+    {{/is}}
+{{/examples}}

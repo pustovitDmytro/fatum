@@ -1,0 +1,60 @@
+# Generators
+
+{{#sections}}
+{{#this.values}}
+
+## {{this.id}}
+
+{{this.tags.description}}
+
+{{#more this.tags.requires.length 0}}
+**Note!** Next generators are required and used:
+{{#this.tags.requires}}
+   * [```{{this}}```](#{{this}})
+{{/this.tags.requires}}
+{{/more}}
+
+{{#if this.params}}
+**Parameters**
+
+{{#this.params}}
+    - `{{name}}` **{{type}}** {{description}}
+{{/this.params}}
+{{/if}}
+
+{{#if this.returns}}
+**Returns**
+
+Returns **{{this.returns.type}}** {{this.returns.description}}
+{{/if}}
+
+[Source]({{@root.info.repository.url}}/blob/{{@root.commit}}/{{this.file}}#L{{this.position}})
+
+{{#if this.testFiles}}
+{{#this.testFiles}}
+[Tests]({{@root.info.repository.url}}/blob/{{@root.commit}}/{{this}})
+{{/this.testFiles}}
+{{/if}}
+
+{{#if this.opts}}
+**Performance**
+
+Operations per second: {{this.opts}}
+{{/if}}
+
+{{#any this.examples}}
+**Examples**
+
+{{#this.examples}}
+{{text}} *\({{type}}\)*
+```javascript
+{{this.code}}
+```
+{{/this.examples}}
+{{/any}}
+
+{{/this.values}}
+
+{{/sections}}
+
+

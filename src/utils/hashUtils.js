@@ -1,7 +1,7 @@
 /* eslint-disable no-magic-numbers */
 export const start = { symbol: '', position: '0' };
 export const end = { symbol: '', position: '1' };
-export const hashDelim = '_';
+export const hashDelim = ',';
 export const maxLettersSymbol = 2;
 
 export function indexToPosition(index) {

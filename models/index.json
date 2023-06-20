@@ -8,5 +8,101 @@
         "url": "https://www.kaggle.com/datasets/kaggle/us-baby-names",
         "fixture": "fixtures/us_first_names_male.csv",
         "model": "us_first_name_male"
+    },
+    {
+        "url": "https://www.kaggle.com/datasets/bugrayan/650000-instagram-user-info",
+        "fixture": [ "fixtures/instagram_usernames.csv" ],
+        "model": "nickname"
+    },
+    {
+        "url": "https://www.kaggle.com/datasets/debasisdotcom/name-entity-recognition-ner-dataset",
+        "fixture": "fixtures/ner/sentences.txt",
+        "token": {
+            "delim": " ",
+            "case": "UPPER"
+        },
+        "model": "ner-sentence"
+    },
+    {
+        "url": "https://www.kaggle.com/datasets/debasisdotcom/name-entity-recognition-ner-dataset",
+        "fixture": {
+            "B-gpe": "fixtures/ner/tag_B-gpe.csv",
+            "CC": "fixtures/ner/tag_CC.csv",
+            "EX": "fixtures/ner/tag_EX.csv",
+            "I-gpe": "fixtures/ner/tag_I-gpe.csv",
+            "I-tim": "fixtures/ner/tag_I-tim.csv",
+            "NN": "fixtures/ner/tag_NN.csv",
+            "POS": "fixtures/ner/tag_POS.csv",
+            "RBR": "fixtures/ner/tag_RBR.csv",
+            "UH": "fixtures/ner/tag_UH.csv",
+            "VBP": "fixtures/ner/tag_VBP.csv",
+            "WRB": "fixtures/ner/tag_WRB.csv",
+            "_$": "fixtures/ner/tag__$.csv",
+            "B-nat": "fixtures/ner/tag_B-nat.csv",
+            "CD": "fixtures/ner/tag_CD.csv",
+            "FW": "fixtures/ner/tag_FW.csv",
+            "I-nat": "fixtures/ner/tag_I-nat.csv",
+            "JJ": "fixtures/ner/tag_JJ.csv",
+            "NNP": "fixtures/ner/tag_NNP.csv",
+            "PRP$": "fixtures/ner/tag_PRP$.csv",
+            "RBS": "fixtures/ner/tag_RBS.csv",
+            "VB": "fixtures/ner/tag_VB.csv",
+            "VBZ": "fixtures/ner/tag_VBZ.csv",
+            "B-art": "fixtures/ner/tag_B-art.csv",
+            "B-org": "fixtures/ner/tag_B-org.csv",
+            "_DOT": "fixtures/ner/tag__DOT.csv",
+            "I-art": "fixtures/ner/tag_I-art.csv",
+            "IN": "fixtures/ner/tag_IN.csv",
+            "JJR": "fixtures/ner/tag_JJR.csv",
+            "NNPS": "fixtures/ner/tag_NNPS.csv",
+            "PRP": "fixtures/ner/tag_PRP.csv",
+            "RP": "fixtures/ner/tag_RP.csv",
+            "VBD": "fixtures/ner/tag_VBD.csv",
+            "WDT": "fixtures/ner/tag_WDT.csv",
+            "B-eve": "fixtures/ner/tag_B-eve.csv",
+            "B-per": "fixtures/ner/tag_B-per.csv",
+            "_DQ": "fixtures/ner/tag__DQ.csv",
+            "I-eve": "fixtures/ner/tag_I-eve.csv",
+            "I-org": "fixtures/ner/tag_I-org.csv",
+            "JJS": "fixtures/ner/tag_JJS.csv",
+            "NNS": "fixtures/ner/tag_NNS.csv",
+            "_SQ": "fixtures/ner/tag__SQ.csv",
+            "VBG": "fixtures/ner/tag_VBG.csv",
+            "WP$": "fixtures/ner/tag_WP$.csv",
+            "B-geo": "fixtures/ner/tag_B-geo.csv",
+            "B-tim": "fixtures/ner/tag_B-tim.csv",
+            "DT": "fixtures/ner/tag_DT.csv",
+            "I-geo": "fixtures/ner/tag_I-geo.csv",
+            "I-per": "fixtures/ner/tag_I-per.csv",
+            "MD": "fixtures/ner/tag_MD.csv",
+            "PDT": "fixtures/ner/tag_PDT.csv",
+            "RB": "fixtures/ner/tag_RB.csv",
+            "TO": "fixtures/ner/tag_TO.csv",
+            "VBN": "fixtures/ner/tag_VBN.csv",
+            "WP": "fixtures/ner/tag_WP.csv"
+        },
+        "model": "ner-tags"
+    },
+    {
+        "url": "https://www.kaggle.com/datasets/domainsindex/secondlevel-domains-listzone-file",
+        "fixture": "fixtures/second_level_domains.csv",
+        "token": {
+            "delim": "."
+        },
+        "model": "domain_zone"
+    },
+    {
+        "url": "https://www.kaggle.com/datasets/domainsindex/secondlevel-domains-listzone-file",
+        "fixture": [
+            "fixtures/third_level_domains.1.csv",
+            "fixtures/third_level_domains.2.csv",
+            "fixtures/third_level_domains.3.csv"
+        ],
+        "model": "domain"
+    },
+    {
+        "url": "https://www.kaggle.com/datasets/vinceallenvince/engwales-surnames",
+        "fixture": "fixtures/engwales_surnames.csv",
+        "model": "lastName"
     }
 ]
