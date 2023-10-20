@@ -18,3 +18,4 @@ export { default as text } from './text';
 export { default as uniform } from './uniform';
 export { default as uuid } from './uuid';
 export { default as website } from './website';
+export { default as date } from './date';

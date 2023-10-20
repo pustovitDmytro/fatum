@@ -25,3 +25,4 @@ test('random text', tester.test('text'));
 test('random uniform', tester.test('uniform', 4, 8));
 test('random uuid', tester.test('uuid'));
 test('random website', tester.test('website'));
+test('random last week date', tester.test('date', Date.now() - 7 * 24 * 60 * 60 * 1000, new Date()));
