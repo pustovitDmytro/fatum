@@ -1,3 +1,18 @@
+# [1.2.0](https://github.com/pustovitDmytro/fatum/compare/v1.1.0...v1.2.0) (2023-10-20)
+
+
+### Chore
+
+* fixes lint ([0e41eca](https://github.com/pustovitDmytro/fatum/commit/0e41ecadd0d52acad7673a9485c20dc9e9e8e5a5))
+
+### Docs
+
+* adds logo ([3611ec7](https://github.com/pustovitDmytro/fatum/commit/3611ec74faa19dd503bda0d41ebe7d985a503cbf))
+
+### New
+
+* adds date generator ([888f481](https://github.com/pustovitDmytro/fatum/commit/888f481f6a5986798ca6a6d6b2754ace4763e75d))
+
 # [1.1.0](https://github.com/pustovitDmytro/fatum/compare/v1.0.1...v1.1.0) (2023-06-20)
 
 
