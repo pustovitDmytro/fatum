@@ -1,3 +1,4 @@
+![Logo](docs/logo.jpg "fatum")
 # fatum
 Random data generator.
 
